@@ -1,0 +1,29 @@
+{
+  "name": "bankapp",
+  "version": "1.0.0",
+  "description": "bankapp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "watch": "gulp clean && gulp watch",
+    "build": "gulp clean && gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wumeilian/bankTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wumeilian/bankTest/issues"
+  },
+  "homepage": "https://github.com/wumeilian/bankTest#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

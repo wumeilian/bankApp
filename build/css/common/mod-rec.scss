@@ -1,0 +1,55 @@
+.mod-rec {
+    padding: 10px 15px;
+    overflow: hidden;
+    .fl {
+        float: left;
+        width: 50%;
+    }
+    .rec-title {
+        overflow: hidden;
+        img {
+          width: 30px;
+          float: left;
+        }
+        span {
+          float: left;
+          margin: 10px 0 0 10px;
+          font-weight: bold;
+          color: #d92014;
+        }
+    }
+    .rec-txt {
+        color: #808080;
+        font-size: 14px;
+    }
+    .rec-content {
+          padding: 15px;
+          img{
+               width: 100%;
+         }
+    }
+    .fr {
+        float: left;
+        width: 50%;
+    }
+    .des {
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+        .hd {
+           font-weight: bold;
+           color: #d92014;
+        }
+       .txt {
+          color: #808080;
+          font-size: 14px;
+       }
+      img {
+         width: 100%;
+         margin: 10px auto;
+      }
+    }
+}

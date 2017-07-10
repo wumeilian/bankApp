@@ -1,0 +1,32 @@
+.mod-fund {
+  .hd {
+      padding: 15px;
+      font-size: 16px;
+      color: #333;
+      border-bottom: 1px solid #e5e5e5;
+      span {
+        float: right;
+        font-size: 15px;
+        color: #666;
+      }
+  }
+  .bd {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      padding: 15px 0;
+  }
+  .rate, .income {
+    -webkit-box-flex: 1;
+    text-align: center;
+    font-size: 15px;
+  }
+  .sub {
+    margin-bottom: 8px;
+    color: #808080;
+  }
+  .num {
+    font-weight: bold;
+    color: #d92014;
+  }
+}
