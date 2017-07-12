@@ -1,15 +1,12 @@
 .head {
+    background-color: #f5f5f5;
    .hd {
       display: -webkit-box;
       -webkit-box-align: center;
       -webkit-box-pack: center;
       padding: 15px 0;
-      background-color: #f5f5f5;
   }
-  .hd-blue {
-      color: #fff;
-      background-color: #1EBCFD;
-  }
+
   .logo {
       display: block;
       width: 50px;
@@ -20,4 +17,16 @@
       display: block;
       font-size: 16px;
   }
+  .back {
+    float: left;
+    margin: 15px 0 0 15px;
+    width: 15px;
+    height: 30px;
+    background: url(../images/back.png) no-repeat;
+    background-size: 100%;
+  }
+}
+.head-blue {
+    color: #fff;
+    background-color: #1EBCFD;
 }

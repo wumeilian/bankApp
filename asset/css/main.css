@@ -47,26 +47,32 @@ table {
 a, button, input {
   -webkit-tap-highlight-color: rgba(255, 0, 0, 0); }
 
-.head .hd {
-  display: -webkit-box;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  padding: 15px 0;
+.head {
   background-color: #f5f5f5; }
+  .head .hd {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    padding: 15px 0; }
+  .head .logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; }
+  .head .txt {
+    display: block;
+    font-size: 16px; }
+  .head .back {
+    float: left;
+    margin: 15px 0 0 15px;
+    width: 15px;
+    height: 30px;
+    background: url(../images/back.png) no-repeat;
+    background-size: 100%; }
 
-.head .hd-blue {
+.head-blue {
   color: #fff;
   background-color: #1EBCFD; }
-
-.head .logo {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-right: 15px; }
-
-.head .txt {
-  display: block;
-  font-size: 16px; }
 
 .mod {
   margin-bottom: 10px;
@@ -76,13 +82,25 @@ a, button, input {
   padding-bottom: 75px; }
 
 .search {
-  margin: 10px; }
-  .search input {
-    padding: 10px;
-    font-size: 15px;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  width: 60%;
+  margin: 10px;
+  border: 1px solid #d4caca;
+  background-color: #fff; }
+  .search i {
     display: block;
-    width: 60%;
-    border: 1px solid #d4caca; }
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background: url(../../asset/images/search.png) no-repeat;
+    background-size: 100%; }
+  .search input {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px; }
 
 .mod-banner img {
   width: 100%; }
@@ -178,6 +196,42 @@ a, button, input {
 .mod-fund .num {
   font-weight: bold;
   color: #d92014; }
+
+.mod-list .item {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding: 15px;
+  background-color: #fff;
+  color: #1a1a1a;
+  font-size: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+  .mod-list .item img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border: 1px solid #e5e5e5; }
+  .mod-list .item .info {
+    -webkit-box-flex: 1; }
+  .mod-list .item .num {
+    color: #e4020d;
+    margin: 8px 0; }
+  .mod-list .item .price {
+    color: #808080; }
+  .mod-list .item .arrow {
+    display: none;
+    margin: 15px 0 0 15px;
+    width: 12px;
+    height: 25px;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: 100%; }
+
+#pmcHome .item img {
+  width: 125px;
+  height: 95px; }
+
+#pmcHome .item .arrow {
+  display: block; }
 
 .foot {
   position: fixed;

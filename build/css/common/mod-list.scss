@@ -1,0 +1,48 @@
+.mod-list {
+    .item {
+        display: -webkit-box;
+        -webkit-box-align: center;
+        padding: 15px;
+        background-color: #fff;
+        color: #1a1a1a;
+        font-size: 15px;
+        border-bottom: 1px solid #e5e5e5;
+      img {
+          display: block;
+          width: 80px;
+          height: 80px;
+          margin-right: 15px;
+          border: 1px solid #e5e5e5;
+      }
+      .info {
+          -webkit-box-flex: 1;
+      }
+      .num {
+          color: #e4020d;
+          margin: 8px 0;
+      }
+      .price {
+          color: #808080;
+      }
+      .arrow {
+        display: none;
+        margin: 15px 0 0 15px;
+        width: 12px;
+        height: 25px;
+        background: url(../images/arrow.png) no-repeat;
+        background-size: 100%;
+      }
+    }
+}
+
+#pmcHome {
+  .item {
+    img {
+      width: 125px;
+      height: 95px;
+    }
+    .arrow {
+      display: block;
+    }
+  }
+}

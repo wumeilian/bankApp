@@ -1,5 +1,5 @@
 /*首页基金列表数据展示*/
-// getUsefulContents('testS')
+
 //接口数据
 var data = {
   Code: 0,
@@ -88,7 +88,6 @@ $(document).ready(function(){
     initFund()  //首页基金
     initAd() //首页广告
     initRec() //今日推荐
-    initFinance()
 
 })
 //首页广告位
@@ -126,42 +125,4 @@ function initRec() {
       })
       $('#index .mod-rec .fr').html(html)
   }
-}
-
-function initFinance() {
-  if(data.Code == 0 && data.Items.length > 0) {
-      var html = data.Items.map(function(items) {
-          return Mustache.render(template.fundTemplate,items)
-      })
-      $('#financeHome .home-fund').html(html)
-  }
-}
-//模板信息
-var template = {
-  //基金模板
-  fundTemplate: '<div class="mod mod-fund">\
-     <div class="hd">\
-         {{fundName}} | {{type}}\
-         <span>{{descript}}</span>\
-     </div>\
-     <div class="bd">\
-         <div class="rate">\
-             <p class="sub">{{rateDes}}</p>\
-             <p class="num">{{rate}}</p>\
-         </div>\
-         <div class="income">\
-             <p class="sub">{{incomeDes}}</p>\
-             <p class="num">{{income}}</p>\
-         </div>\
-     </div>\
- </div>',
- //首页广告模板、单张图片模板
- adTemplate: '<img src="{{imgurl}}" alt="">',
- goodsTemplate: '<div class="des">\
-    <a href="/detail/{{id}}.html">\
-       <p class="hd">{{name}}</p>\
-       <p class="txt">{{des}}</p>\
-       <img src="{{imgurl}}" alt="">\
-     </a>\
- </div>'
 }
