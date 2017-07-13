@@ -1,0 +1,19 @@
+.mod-item {
+    overflow: hidden;
+    background-color: #fff;
+    .des {
+        float: left;
+        width: 50%;
+        height: 100px;
+        text-align: center;
+        color: #333;
+        font-size: 15px;
+        box-sizing: border-box;
+        border-right: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        img {
+          width: 30px;
+          margin: 9% 0 5px 0;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.ct-chart {
+   background: -webkit-linear-gradient(#28D2EB, #1FAFE1); /* Safari 5.1 - 6.0 */
+   background: -o-linear-gradient(#28D2EB, #1FAFE1); /* Opera 11.1 - 12.0 */
+   background: -moz-linear-gradient(#28D2EB, #1FAFE1); /* Firefox 3.6 - 15 */
+   background: linear-gradient(#28D2EB, #1FAFE1);
+   .hd {
+     padding: 10px 0 0 20px;
+     font-size: 15px;
+     color: #333;
+   }
+}
+
+.fund-detail {
+  .des {
+    padding: 15px;
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    font-size: 15px;
+    color: #1a1a1a;
+    border-bottom: 1px solid #e5e5e5;
+
+    span {
+      display: block;
+    }
+    .hd {
+      width: 46%;
+      color: #808080;
+    }
+    .txt {
+      -webkit-box-flex: 1;
+    }
+  }
+
+  .detail-info {
+      .title {
+        padding: 15px;
+        font-size: 15px;
+        color: #1a1a1a;
+        font-weight: bold;
+      }
+      .info {
+          border-bottom: 1px solid #e5e5e5;
+      }
+      .info-txt {
+        padding: 15px;
+        font-size: 15px;
+        color: #666;
+        background-color: #F5F5F5;
+      }
+      .sub-des {
+        display: -webkit-box;
+        -webkit-box-pack: start;
+        padding-bottom: 10px;
+
+        span {
+          display: block;
+        }
+        .hd {
+          width: 35%;
+          color: #080808;
+        }
+        .txt {
+          -webkit-box-flex: 1;
+        }
+      }
+  }
+  .buynow {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    background-color: #32B1FE;
+    color: #fff;
+  }
+
+}

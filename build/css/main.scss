@@ -1,6 +1,7 @@
 //base
 @import "base/reset.scss";
-
+//plugin
+@import "plugin/chartist.scss";
 // common
 @import "common/head.scss";
 @import "common/common.scss";
@@ -10,4 +11,8 @@
 @import "common/mod-rec.scss";
 @import "common/mod-fund.scss";
 @import "common/mod-list.scss";
+@import "common/mod-item.scss";
 @import "common/foot.scss";
+
+//modules
+@import "modules/finance-detail.scss";

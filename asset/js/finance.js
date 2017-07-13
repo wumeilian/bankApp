@@ -1,8 +1,22 @@
 /*理财页*/
 $(document).ready(function(){
     initFinance()  //基金
-})
+    line() //折线图
 
+})
+function line() {
+  new Chartist.Line('.ct-chart', {
+    labels: ['6-11', '6-12', '6-13', '6-14', '6-15', '6-16', '6-17'],
+    series: [
+     [8, 5, 2, 9, 5, 6, 7]
+    ]
+  }, {
+    fullWidth: true,
+    chartPadding: {
+      right: 30
+    }
+  })
+}
 //基金数据
 function initFinance() {
   if(data.Code == 0 && data.Items.length > 0) {

@@ -1,4 +1,4 @@
 # bankTest
 ## 银行app
-## My first github project
-### update something yeah wml
+### 发布的时候只需要view和asset两个文件的内容即可
+### 每一个页面有独立的js文件，避免数据污染，提高网页加载速度
