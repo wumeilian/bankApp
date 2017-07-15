@@ -13,70 +13,143 @@
         <script src="../../asset/js/plugin/jquery.min.js"></script>
         <script src="../../asset/js/plugin/mustache.min.js"></script>
         <script src="../../asset/js/plugin/chartist.min.js"></script>
-        <script src="../../asset/js/template.min.js"></script>
-        <script type="text/javascript">
-            var template = template
-        </script>
+
     </head>
     <body>
-        <header class="head head-gray">
+        <header id="detailTitle" class="head head-gray">
             <a class="back" href="javascript:history.back(-1)"></a>
             <div class="hd ">
-                <p class="txt">农商宝</p>
+              <script>
+                var tem_title = '<p class="txt">{{title}}</p>'
+              </script>
             </div>
         </header>
-        <div id="financeDetail" class="fund-detail contain">
+        <div id="financeDetail" class="fund-detail">
             <div class="ct-chart">
                 <p class="hd">年化收益利率(%)</p>
             </div>
-            <div class="mod">
-              <p class="des">
-                <span class="hd">基金名称</span>
-                <span class="txt">博时现金宝货币C类</span>
-              </p>
-              <p class="des">
-                <span class="hd">基金代码</span>
-                <span class="txt">002855</span>
-              </p>
-              <p class="des">
-                <span class="hd">基金管理人</span>
-                <span class="txt">博时基金管理有限公司</span>
-              </p>
-              <p class="des">
-                <span class="hd">基金销售服务主题</span>
-                <span class="txt">博时基金管理有限公司</span>
-              </p>
-            </div>
-            <div class="mod detail-info">
-               <div class="info pro">
-                 <p class="title">产品属性</p>
-                 <div class="info-txt">
-                   <p class="sub-des">
-                     <span class="hd">产品名称</span>
-                     <span class="txt">掌中宝-001期</span>
-                   </p>
-                   <p class="sub-des">
-                     <span class="hd">产品代码</span>
-                     <span class="txt">LEB001</span>
-                   </p>
-                   <p class="sub-des">
-                     <span class="hd">产品币种</span>
-                     <span class="txt">人民币</span>
-                   </p>
-                   <p class="sub-des">
-                     <span class="hd">预期年化收益</span>
-                     <span class="txt">4%</span>
-                   </p>
-                   <p class="sub-des">
-                     <span class="hd">使用对象</span>
-                     <span class="txt">适用于风险等级为稳健型（含）以上的客户</span>
-                   </p>
-                 </div>
-               </div>
-               <div class="info pay">
-                 <p class="title">购买属性</p>
-               </div>
-            </div>
+            <div class="detailContent">
+            <script>
+            var temp_detail = '<div class="mod">\
+              <p class="des">\
+                <span class="hd">基金名称</span>\
+                <span class="txt">{{name}}</span>\
+              </p>\
+              <p class="des">\
+                <span class="hd">基金代码</span>\
+                <span class="txt">{{code}}</span>\
+              </p>\
+              <p class="des">\
+                <span class="hd">基金管理人</span>\
+                <span class="txt">{{manage}}</span>\
+              </p>\
+              <p class="des">\
+                <span class="hd">基金销售服务主题</span>\
+                <span class="txt">{{theme}}</span>\
+              </p>\
+            </div>\
+            <div class="mod detail-info">\
+               <div class="info pro">\
+                 <p class="title">产品属性<span class="arrow-down"></span></p>\
+                 <div class="info-txt hidden">\
+                   <p class="sub-des">\
+                     <span class="hd">产品名称</span>\
+                     <span class="txt">{{proName}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品代码</span>\
+                     <span class="txt">{{proCode}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品币种</span>\
+                     <span class="txt">{{proCurrency}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">预期年化收益</span>\
+                     <span class="txt">{{proIncome}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">份额面值</span>\
+                     <span class="txt">{{proValue}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品期限</span>\
+                     <span class="txt">{{proTime}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">使用对象</span>\
+                     <span class="txt">{{proObj}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">销售状态</span>\
+                     <span class="txt">{{proStatus}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品类型</span>\
+                     <span class="txt">{{proType}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">收益类型</span>\
+                     <span class="txt">{{proIncomeType}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">风险等级</span>\
+                     <span class="txt">{{proLevel}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品销售期</span>\
+                     <span class="txt">{{proDate}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品成立日</span>\
+                     <span class="txt">{{proBegin}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">产品到期日</span>\
+                     <span class="txt">{{proEnd}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">交易渠道</span>\
+                     <span class="txt">{{proChannel}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">交易时间</span>\
+                     <span class="txt">{{proExchange}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">挂单时间</span>\
+                     <span class="txt">{{proGuadan}}</span>\
+                   </p>\
+                 </div>\
+               </div>\
+               <div class="info pay">\
+                 <p class="title">购买属性<span class="arrow-down"></span></p>\
+                 <div class="info-txt hidden">\
+                   <p class="sub-des">\
+                     <span class="hd">首次购买起点金额（起购金额）</span>\
+                     <span class="txt">{{payOrigin}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">追加购买起点金额</span>\
+                     <span class="txt">{{payAdd}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">赎回起点份额</span>\
+                     <span class="txt">{{payBack}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">最低持有份额</span>\
+                     <span class="txt">{{payLow}}</span>\
+                   </p>\
+                   <p class="sub-des">\
+                     <span class="hd">购买扣款规则</span>\
+                     <span class="txt">{{payRule}}</span>\
+                   </p>\
+                </div>\
+               </div>\
+            </div>'
+          </script>
+          </div>
             <a class="buynow" href="#">立即抢购</a>
         </div>
     <script src="../../asset/js/finance.min.js"></script>

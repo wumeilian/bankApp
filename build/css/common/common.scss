@@ -29,3 +29,26 @@
         font-size: 15px;
     }
 }
+
+.hidden {
+  display: none !important;
+}
+.arrow-down {
+    float: right;
+    width: 10px;
+    height: 20px;
+    background: url(../../asset/images/back_gray.png) no-repeat;
+    background-size: 100%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* Internet Explorer */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+}
+.up {
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* Internet Explorer */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+}

@@ -6,7 +6,7 @@ var template = {
          {{fundName}} | {{type}}\
          <span>{{descript}}</span>\
      </div>\
-     <div class="bd">\
+     <a class="bd" href="finance/detail.html?id={{id}}">\
          <div class="rate">\
              <p class="sub">{{rateDes}}</p>\
              <p class="num">{{rate}}</p>\
@@ -15,7 +15,7 @@ var template = {
              <p class="sub">{{incomeDes}}</p>\
              <p class="num">{{income}}</p>\
          </div>\
-     </div>\
+     </a>\
  </div>',
  //首页广告模板、单张图片模板
  adTemplate: '<img src="{{imgurl}}" alt="">',

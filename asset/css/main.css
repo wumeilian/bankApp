@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -771,6 +772,36 @@ a, button, input {
     width: 100%;
     padding: 10px;
     font-size: 15px; }
+
+.hidden {
+  display: none !important; }
+
+.arrow-down {
+  float: right;
+  width: 10px;
+  height: 20px;
+  background: url(../../asset/images/back_gray.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* Internet Explorer */
+  -moz-transform: rotate(-90deg);
+  /* Firefox */
+  -webkit-transform: rotate(-90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-90deg);
+  /* Opera */ }
+
+.up {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* Internet Explorer */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(90deg);
+  /* Opera */ }
 
 .mod-banner img {
   width: 100%; }
