@@ -1,0 +1,87 @@
+#creditDetail {
+	.detail-txt {
+	    padding: 10px;
+	    font-size: 15px;
+	    background-color: #fff; 
+	    p {
+	        margin-bottom: 5px;
+	    }
+	    .price {
+	        color: #e4020d;
+    		font-size: 17px;
+    		span {
+    		    font-size: 14px;
+			    margin-left: 10px;
+			    color: #808080;
+    		}
+	    }
+	}
+	.detail-img {
+		.hd {
+		    padding: 15px 0;
+		    text-align: center;
+		    color: #808080;
+		    background-color: #F5F0F0;
+		}
+		.img {
+			img {
+			    display: block;
+				width: 100%;
+			}
+		}
+	}
+	.change {
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	}
+}
+
+.order-info {
+	padding: 15px;	    
+	.title {
+		display: -webkit-box;
+	    -webkit-box-align: center;
+	    padding-bottom: 10px;
+	    border-bottom: 1px solid #e5e5e5;
+	    img {
+	    	display: block;
+		    width: 80px;
+		    height: 80px;
+		    margin-right: 15px;
+	    }
+	}
+	.info {
+	 	-webkit-box-flex: 1;
+	    font-size: 15px;
+	    p {
+	    	padding-bottom: 5px;
+	    }
+	}
+	.point {
+		font-size: 17px;
+   		color: #e4020d;
+	}
+	.price {			
+	    color: #808080;
+	    text-decoration: line-through;
+	}
+	.num {
+	    float: right;
+	}
+	.buy {
+		display: -webkit-box;
+	    -webkit-box-pack: justify;
+	    padding-top: 10px;
+	}
+	.buy-num {
+	    line-height: 1.6;
+	    i {
+	        padding: 5px 10px;
+		    background-color: #F5F5F5;
+	    }
+	    span {
+	    	margin: 0 10px;
+	    }
+	}
+}

@@ -2,6 +2,7 @@
 @import "base/reset.scss";
 //plugin
 @import "plugin/chartist.scss";
+@import "plugin/swiper.scss";
 // common
 @import "common/head.scss";
 @import "common/common.scss";
@@ -16,3 +17,4 @@
 
 //modules
 @import "modules/finance-detail.scss";
+@import "modules/credit-detail.scss";

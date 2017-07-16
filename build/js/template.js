@@ -27,7 +27,7 @@ var template = {
      </a>\
  </div>',
 //列表模板
-listTemplate: '<a class="item" href="#">\
+listTemplate: '<a class="item" href="detail.html?id={{id}}">\
     <img src="{{imgurl}}" alt="">\
     <div class="info">\
         <p class="hd">{{title}}</p>\

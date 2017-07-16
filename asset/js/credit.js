@@ -1,13 +1,30 @@
 /*积分商城页*/
 $(document).ready(function(){
-    initList()  //积分列表
+   if($("#creditHome").length>0) {
+      initList()  //积分列表
+    }
+    //积分详情页
+    if($("#creditDetail").length>0) {
+      initSlide() //轮播图
+    }
+    
 })
-
+//积分详情页
+//轮播图
+function initSlide() {
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+  })       
+}
 //积分列表数据
 function initList() {
   if(data.Code == 0 && data.Items.length > 0) {
       var html = data.Items.map(function(items) {
           return Mustache.render(template.listTemplate,{
+          id: items.id,
           imgurl: items.imgurl,
           title: items.title,
           middle: items.num + '积分',
