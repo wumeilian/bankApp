@@ -27,10 +27,10 @@
         <div id="creditOrder">
             <div class="mod order-info">
                 <div class="title">
-                    <img src="../../asset/images/img2.png">
+                    <img src="../../asset/images/credit_1.png">
                     <div class="info">
                         <p class="hd">康佳 中国梦 电热水壶</p>
-                        <p class="point">30积分 
+                        <p class="point">30积分
                             <span class="price">￥192.00</span>
                             <span class="num">x1</span>
                         </p>
@@ -42,10 +42,35 @@
                 </div>
             </div>
             <div class="mod order-center">
-                1256
+                <p class="btn-style">
+                    <span class="btn btn-select">自取</span>
+                    <span class="btn">邮寄</span>
+                </p>
+                <div class="style-self">
+                    <label>自取</label>
+                    <select id="select" name="card">
+                        <option value="option1">中国农业银行</option>
+                        <option value="option2">中国农业银行</option>
+                        <option value="option3">中国农业银行</option>
+                        <option value="option4">中国农业银行</option>
+
+                    </select>
+                    <span class="icon"><i class="arrow-down"></i></span>
+                </div>
+                <div class="style-mail hidden">
+                  <p class="des"><span>地址：</span><input type="text" name="add" value=""></p>
+                  <p class="des"><span>收件人：</span><input type="text" name="receiver" value=""></p>
+                  <p class="des"><span>姓名：</span><input type="text" name="name" value=""></p>
+                  <p class="des"><span>电话号码：</span><input type="text" name="tel" value=""></p>
+                  <p class="sum">共<span class="num">1</span>件商品 (运费 ￥<span class="price">5.00</span>)</p>
+                </div>
+                <div class="result">
+                    <p class="num">合计：<span>30积分</span></p>
+                    <a class="submit" href="#">提交订单</a>
+                </div>
             </div>
         </div>
-  
+
     <script src="../../asset/js/credit.min.js"></script>
 
     </body>

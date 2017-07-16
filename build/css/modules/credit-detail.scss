@@ -2,7 +2,7 @@
 	.detail-txt {
 	    padding: 10px;
 	    font-size: 15px;
-	    background-color: #fff; 
+	    background-color: #fff;
 	    p {
 	        margin-bottom: 5px;
 	    }
@@ -38,7 +38,7 @@
 }
 
 .order-info {
-	padding: 15px;	    
+	padding: 15px;
 	.title {
 		display: -webkit-box;
 	    -webkit-box-align: center;
@@ -62,7 +62,7 @@
 		font-size: 17px;
    		color: #e4020d;
 	}
-	.price {			
+	.price {
 	    color: #808080;
 	    text-decoration: line-through;
 	}
@@ -78,10 +78,105 @@
 	    line-height: 1.6;
 	    i {
 	        padding: 5px 10px;
-		    background-color: #F5F5F5;
+		    	background-color: #F5F5F5;
 	    }
 	    span {
 	    	margin: 0 10px;
 	    }
+	}
+}
+.order-center {
+	.btn-style {
+			display: -webkit-box;
+			-webkit-box-align: center;
+			-webkit-box-pack: center;
+			padding: 10px 0;
+	}
+	.btn {
+			display: -webkit-box;
+			padding: 7px 30px;
+			border: 1px solid #1EBCFD;
+			border-radius: 5px;
+			margin: 0 5px;
+	}
+	.btn-select {
+		background-color: #1ebcfd;
+		color: #fff;
+	}
+	.style-self {
+		display: -webkit-box;
+		-webkit-box-align: center;
+		position: relative;
+		padding: 10px 10px 200px;
+		box-sizing: border-box;
+		font-size: 15px;
+	  border-bottom: 1px solid #e5e5e5;
+		select {
+			display: -webkit-box;
+			-webkit-box-flex: 1;
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			padding: 10px 10px;
+			margin-left: 10px;
+			border: solid 1px #e5e5e5;
+			outline: none;
+		}
+		.icon {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			padding: 9px 15px;
+			background-color: #1EBCFD;
+			i {
+				background: url(../../asset/images/back.png) no-repeat;
+		    background-size: 100%;
+			}
+		}
+	}
+	.style-mail {
+		    padding: 10px 10px 80px;
+				.des {
+					display: -webkit-box;
+					-webkit-box-align: center;
+					padding: 10px;
+    			margin-bottom: 10px;
+					border: 1px solid #e5e5e5;
+					border-radius: 5px;
+					font-size: 15px;
+					color: #808080;
+					input {
+						display: -webkit-box;
+						-webkit-box-flex: 1;
+						margin-left: 10px;
+					}
+				}
+				.sum {
+					font-size: 14px;
+					text-align: right;
+				}
+	}
+	.result {
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: end;
+		padding: 15px 0;
+		font-size: 15px;
+		.num {
+			margin-right: 10px;
+			span {
+				color: #e4020d;
+			}
+		}
+		.submit {
+			padding: 17px 30px;
+			height: 100%;
+			color: #fff;
+			background: -webkit-linear-gradient(left,#0FD1FE,#1BA9FF);
+			background: -o-linear-gradient(right,#0FD1FE,#1BA9FF);
+			background: -moz-linear-gradient(right,#0FD1FE,#1BA9FF);
+			background: linear-gradient(to right, #0FD1FE,#1BA9FF);
+			background-color: #0FD1FE;
+		}
 	}
 }

@@ -1677,3 +1677,87 @@ button.swiper-pagination-bullet {
       background-color: #F5F5F5; }
     .order-info .buy-num span {
       margin: 0 10px; }
+
+.order-center .btn-style {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  padding: 10px 0; }
+
+.order-center .btn {
+  display: -webkit-box;
+  padding: 7px 30px;
+  border: 1px solid #1EBCFD;
+  border-radius: 5px;
+  margin: 0 5px; }
+
+.order-center .btn-select {
+  background-color: #1ebcfd;
+  color: #fff; }
+
+.order-center .style-self {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  position: relative;
+  padding: 10px 10px 200px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+  .order-center .style-self select {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 10px 10px;
+    margin-left: 10px;
+    border: solid 1px #e5e5e5;
+    outline: none; }
+  .order-center .style-self .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 9px 15px;
+    background-color: #1EBCFD; }
+    .order-center .style-self .icon i {
+      background: url(../../asset/images/back.png) no-repeat;
+      background-size: 100%; }
+
+.order-center .style-mail {
+  padding: 10px 10px 80px; }
+  .order-center .style-mail .des {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #808080; }
+    .order-center .style-mail .des input {
+      display: -webkit-box;
+      -webkit-box-flex: 1;
+      margin-left: 10px; }
+  .order-center .style-mail .sum {
+    font-size: 14px;
+    text-align: right; }
+
+.order-center .result {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: end;
+  padding: 15px 0;
+  font-size: 15px; }
+  .order-center .result .num {
+    margin-right: 10px; }
+    .order-center .result .num span {
+      color: #e4020d; }
+  .order-center .result .submit {
+    padding: 17px 30px;
+    height: 100%;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #0FD1FE, #1BA9FF);
+    background: -o-linear-gradient(right, #0FD1FE, #1BA9FF);
+    background: -moz-linear-gradient(right, #0FD1FE, #1BA9FF);
+    background: linear-gradient(to right, #0FD1FE, #1BA9FF);
+    background-color: #0FD1FE; }

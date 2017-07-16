@@ -7,17 +7,36 @@ $(document).ready(function(){
     if($("#creditDetail").length>0) {
       initSlide() //轮播图
     }
-    
+
+    //积分兑换页
+    if($('#creditOrder').length>0) {
+      initTab() //tab切换
+    }
+
 })
+//积分兑换页
+function initTab() {
+  $('.btn-style').on('click', '.btn', function() {
+    $('.btn-style .btn').removeClass('btn-select')
+    $(this).addClass('btn-select')
+    if($(this).index() == 0) {
+      $('.style-self').removeClass('hidden')
+      $('.style-mail').addClass('hidden')
+    }else {
+      $('.style-mail').removeClass('hidden')
+      $('.style-self').addClass('hidden')
+    }
+  })
+}
 //积分详情页
-//轮播图
+/*轮播图*/
 function initSlide() {
   var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,    
+    loop: true,
     // 如果需要分页器
     pagination: '.swiper-pagination',
-    
-  })       
+
+  })
 }
 //积分列表数据
 function initList() {
