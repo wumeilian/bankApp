@@ -12,10 +12,6 @@
         <link href="../../asset/css/main.min.css" rel="stylesheet" type="text/css">
         <script src="../../asset/js/plugin/jquery.min.js"></script>
         <script src="../../asset/js/plugin/mustache.min.js"></script>
-        <!-- <script src="../../asset/js/template.min.js"></script> -->
-        <script type="text/javascript">
-            // var template = template
-        </script>
     </head>
     <body>
         <header class="head head-blue">
@@ -27,25 +23,28 @@
         <div id="creditDetail">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../../asset/images/credit_1.png"></div>
-                    <div class="swiper-slide"><img src="../../asset/images/credit_1.png"></div>
-                    <div class="swiper-slide"><img src="../../asset/images/credit_1.png"></div>
+                    <script>
+                      var tem_slide = '<div class="swiper-slide"><img src="{{imgurl}}"></div>'
+                    </script>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
             <div class="detail-txt">
-                <p class="hd">康佳00</p>
-                <p class="num">500ml/个</p>
-                <p class="price">30积分<span>原价：￥192.00</span></p>
+                <script>
+                   var tem_info = '<p class="hd">{{name}}</p>\
+                   <p class="num">{{num}}</p>\
+                   <p class="price">{{credit}}积分<span>原价：￥{{price}}</span></p>'
+                </script>
             </div>
             <div class="detail-img">
                 <p class="hd">———— 商品详情 ————</p>
                 <div class="img">
-                    <img src="../../asset/images/credit_2.png">
-                    <img src="../../asset/images/credit_2.png">
+                    <script>
+                      var tem_img = '<img src="{{imgurl}}">'
+                    </script>
                 </div>
             </div>
-            <a class="button change" href="order.html">立即兑换</a>
+            <a class="button change" href="javascript:viod(0)">立即兑换</a>
         </div>
     <script src="../../asset/js/plugin/swiper-3.4.2.jquery.min.js"></script>
     <script src="../../asset/js/credit.min.js"></script>

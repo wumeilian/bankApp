@@ -1712,7 +1712,9 @@ button.swiper-pagination-bullet {
     padding: 10px 10px;
     margin-left: 10px;
     border: solid 1px #e5e5e5;
-    outline: none; }
+    outline: none;
+    background: url(../../asset/images/arrow_bg.png) center right no-repeat;
+    background-size: 45px 39px; }
   .order-center .style-self .icon {
     position: absolute;
     top: 10px;
