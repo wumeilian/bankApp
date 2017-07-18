@@ -1325,6 +1325,9 @@ button.swiper-pagination-bullet {
 .contain {
   padding-bottom: 75px; }
 
+.text-red {
+  color: #e4020d; }
+
 .search {
   display: -webkit-box;
   -webkit-box-align: center;
@@ -1969,3 +1972,37 @@ button.swiper-pagination-bullet {
     margin: 20px 0;
     color: #e4020d;
     font-size: 13px; }
+
+#pmcDetail .detail-slide {
+  padding: 40px 10px 10px;
+  background-color: #fff; }
+
+#pmcDetail .swiper-pagination {
+  position: relative;
+  margin-top: 40px; }
+  #pmcDetail .swiper-pagination span {
+    margin-right: 10px; }
+
+#pmcDetail .pmcdetail-des {
+  padding: 10px 30px;
+  font-size: 15px; }
+  #pmcDetail .pmcdetail-des p {
+    margin-bottom: 10px; }
+  #pmcDetail .pmcdetail-des .name {
+    font-weight: bold; }
+
+#pmcDetail .pmcdetail-btn {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  padding: 50px 15px; }
+  #pmcDetail .pmcdetail-btn .btn {
+    display: -webkit-box;
+    padding: 9px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #1EBCFD;
+    color: #333; }
+  #pmcDetail .pmcdetail-btn .btn:active {
+    background-color: #1EBCFD;
+    color: #fff; }

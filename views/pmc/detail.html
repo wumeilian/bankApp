@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <title>陵城农商银行</title>
+        <meta name="description" content="">
+        <link href="../../asset/css/main.min.css" rel="stylesheet" type="text/css">
+        <script src="../../asset/js/plugin/jquery.min.js"></script>
+        <script src="../../asset/js/plugin/mustache.min.js"></script>
+    </head>
+    <body>
+        <header class="head head-blue">
+            <a class="back" href="javascript:history.back(-1)"></a>
+            <div class="hd ">
+                <p class="txt">贵金属详情</p>
+            </div>
+        </header>
+        <div id="pmcDetail">
+          <div class="detail-slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <script>
+                      var tem_slide = '<div class="swiper-slide"><img src="{{imgurl}}"></div>'
+                    </script>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+            <div class="pmcdetail-des">
+              <script>
+                var tem_info = '<p class="name">名称: <span>{{name}}</span></p>\
+                <p class="price">价格: <span class="text-red">￥{{price}}</span></p>\
+                <p class="add">产地: <span>{{add}}</span></p>'
+              </script>
+            </div>
+            <div class="pmcdetail-btn">
+                <a class="btn" href="#">在线预约</a>
+                <a class="btn" href="#">在线预购</a>
+                <a class="btn" href="#">在线咨询</a>
+            </div>
+
+        </div>
+    <script src="../../asset/js/plugin/swiper-3.4.2.jquery.min.js"></script>
+    <script src="../../asset/js/pmc.min.js"></script>
+
+    </body>
+</html>

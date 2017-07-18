@@ -1,0 +1,41 @@
+#pmcDetail {
+  .detail-slide {
+    padding: 40px 10px 10px;
+    background-color: #fff;
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: 40px;
+    span {
+      margin-right: 10px;
+    }
+  }
+  .pmcdetail-des {
+    padding: 10px 30px;
+    font-size: 15px;
+    p {
+      margin-bottom: 10px;
+    }
+    .name {
+      font-weight: bold;
+    }
+  }
+  .pmcdetail-btn {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    padding: 50px 15px;
+    .btn {
+        display: -webkit-box;
+        padding: 9px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        border: 1px solid #1EBCFD;
+        color: #333;
+    }
+    .btn:active {
+      background-color: #1EBCFD;
+      color: #fff;
+    }
+  }
+}
