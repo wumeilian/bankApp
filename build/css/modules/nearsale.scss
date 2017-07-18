@@ -1,0 +1,14 @@
+#nearSale {
+  .distant {
+    float: right;
+    overflow: hidden;
+  }
+  .pis {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: url(../../asset/images/icon_dis.png) center no-repeat;
+    background-size: 100%;
+  }
+}

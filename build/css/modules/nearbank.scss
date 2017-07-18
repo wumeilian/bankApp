@@ -1,0 +1,16 @@
+.detail-nav {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  font-size: 15px;
+  color: #808080;
+  .des {
+    -webkit-box-flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  .des-cur {
+    color: #1EBCFD;
+    border-bottom: 3px solid #1EBCFD;
+  }
+}

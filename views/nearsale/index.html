@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <title>陵城农商银行</title>
+        <meta name="description" content="">
+        <link href="../../asset/css/main.min.css" rel="stylesheet" type="text/css">
+        <script src="../../asset/js/plugin/jquery.min.js"></script>
+        <script src="../../asset/js/plugin/mustache.min.js"></script>
+    </head>
+    <body>
+        <header class="head head-blue">
+            <a class="back" href="javascript:history.back(-1)"></a>
+            <div class="hd ">
+                <p class="txt">附近商家</p>
+            </div>
+        </header>
+        <div id="nearSale">
+            <div class="mod-list">
+              <script>
+                var tem_list = '<a class="mod item" href="">\
+                    <img src="{{imgurl}}" alt="">\
+                    <div class="info">\
+                        <p class="hd">{{title}}\
+                          <span class="distant"><i class="pis"></i>{{distant}}</span>\
+                        </p>\
+                        <p class="num">{{middle}}</p>\
+                        <p class="price">{{bottom}}</p>\
+                    </div>\
+                </a>'
+              </script>
+            </div>
+        </div>
+    <script src="../../asset/js/nearsale.min.js"></script>
+
+    </body>
+</html>

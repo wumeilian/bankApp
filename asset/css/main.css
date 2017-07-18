@@ -1546,13 +1546,6 @@ button.swiper-pagination-bullet {
     background: url(../images/arrow.png) no-repeat;
     background-size: 100%; }
 
-#pmcHome .item img {
-  width: 125px;
-  height: 95px; }
-
-#pmcHome .item .arrow {
-  display: block; }
-
 .mod-item {
   overflow: hidden;
   background-color: #fff; }
@@ -1842,6 +1835,10 @@ button.swiper-pagination-bullet {
   .detail-search .search {
     -webkit-box-flex: 1;
     padding-right: 10px; }
+  .detail-search .search-btn {
+    display: block;
+    padding: 10px 5px;
+    color: #333; }
 
 .detail-des {
   padding: 10px 20px;
@@ -1973,6 +1970,13 @@ button.swiper-pagination-bullet {
     color: #e4020d;
     font-size: 13px; }
 
+#pmcHome .item img {
+  width: 125px;
+  height: 95px; }
+
+#pmcHome .item .arrow {
+  display: block; }
+
 #pmcDetail .detail-slide {
   padding: 40px 10px 10px;
   background-color: #fff; }
@@ -2006,3 +2010,29 @@ button.swiper-pagination-bullet {
   #pmcDetail .pmcdetail-btn .btn:active {
     background-color: #1EBCFD;
     color: #fff; }
+
+.detail-nav {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  font-size: 15px;
+  color: #808080; }
+  .detail-nav .des {
+    -webkit-box-flex: 1;
+    text-align: center;
+    padding: 10px; }
+  .detail-nav .des-cur {
+    color: #1EBCFD;
+    border-bottom: 3px solid #1EBCFD; }
+
+#nearSale .distant {
+  float: right;
+  overflow: hidden; }
+
+#nearSale .pis {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url(../../asset/images/icon_dis.png) center no-repeat;
+  background-size: 100%; }
