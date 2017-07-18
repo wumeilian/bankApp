@@ -13,29 +13,6 @@
     -webkit-box-pack: justify;
     margin-bottom: 10px;
   }
-  .deposit-style {
-    border-top: 1px solid #e5e5e5;
-    background-color: #fff;
-  }
-  .type {
-    display: block;
-    padding: 15px;
-    color: #333;
-    font-size: 14px;
-    border-bottom: 1px solid #e5e5e5;
-    i {
-      float: right;
-      width: 10px;
-      height: 20px;
-      background: url(../../asset/images/back_gray.png) no-repeat;
-      background-size: 100%;
-      transform:rotate(-180deg);
-      -ms-transform:rotate(-180deg); /* Internet Explorer */
-      -moz-transform:rotate(-180deg); /* Firefox */
-      -webkit-transform:rotate(-180deg); /* Safari 和 Chrome */
-      -o-transform:rotate(-180deg); /* Opera */
-    }
-  }
 }
 #depositSelf {
   overflow: hidden;
@@ -111,9 +88,36 @@
     padding: 10px;
     font-size: 13px;
     color: #666;
+    overflow: hidden;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  .check-item {
+    float: left;
+    width: 50%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    label::before {
+      content: '';
+      float: left;
+      width: 15px;
+      height: 15px;
+      margin: 2px 15px 0 0;
+      border: 1px solid #c7c6c6;
+    }
+    input[type='checkbox']:checked+label::before {
+      background-color: #1EBCFD;
+      border: 1px solid #1EBCFD;
+    }
   }
 }
-
+#timeStyle {
+  .check-item {
+    width: 33.3%;
+  }
+}
 #depositContact {
   .contact {
     padding: 20px 30px 0;
@@ -146,5 +150,61 @@
     width: 95%;
     margin: 0 auto;
     border-radius: 5px;
+  }
+}
+
+#loanDetail {
+  .loan-hd {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    .btn {
+      display: block;
+      padding: 7px 20px;
+      margin: 15px 10px;
+      color: #333;
+      font-size: 15px;
+      border: 1px solid #1ebcfd;
+      border-radius: 3px;
+    }
+    .btn-cur {
+        color: #fff;
+        background-color: #1ebcfd
+    }
+  }
+  .loan-content {
+    padding: 0 15px 50px;
+    font-size: 15px;
+    .des {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+      select {
+        display: -webkit-box;
+        -webkit-box-flex: 1;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        padding: 7px 10px;
+        margin-left: 10px;
+        border: 1px solid #e5e5e5;
+        outline: 0;
+        background: url(../../asset/images/arrow_bg.png) center right no-repeat;
+        background-size: 40px 39px;
+      }
+      input, textarea {
+        display: -webkit-box;
+        -webkit-box-flex: 1;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: 1px solid #e5e5e5;
+      }
+    }
+    .tips {
+      margin: 20px 0;
+      color: #e4020d;
+      font-size: 13px;
+    }
   }
 }

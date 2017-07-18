@@ -73,3 +73,27 @@
   position: fixed;
   bottom: 0;
 }
+
+.list-style {
+  border-top: 1px solid #e5e5e5;
+  background-color: #fff;
+  .type {
+    display: block;
+    padding: 15px;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    i {
+      float: right;
+      width: 10px;
+      height: 20px;
+      background: url(../../asset/images/back_gray.png) no-repeat;
+      background-size: 100%;
+      transform:rotate(-180deg);
+      -ms-transform:rotate(-180deg); /* Internet Explorer */
+      -moz-transform:rotate(-180deg); /* Firefox */
+      -webkit-transform:rotate(-180deg); /* Safari 和 Chrome */
+      -o-transform:rotate(-180deg); /* Opera */
+    }
+  }
+}
