@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <title>陵城农商银行</title>
+        <meta name="description" content="">
+        <link href="../../asset/css/main.min.css" rel="stylesheet" type="text/css">
+        <script src="../../asset/js/plugin/jquery.min.js"></script>
+        <script src="../../asset/js/plugin/mustache.min.js"></script>
+    </head>
+    <body>
+        <header class="head head-blue">
+            <a class="back" href="javascript:history.back(-1)"></a>
+            <div class="hd ">
+                <p class="txt">订单中心</p>
+            </div>
+        </header>
+        <div id="order">
+          <script>
+            var tem_order = '<div class="mod mod-order">\
+                <p class="hd">兑换码:{{orderid}}\
+                  <span class="hd-status">{{status}}</span>\
+                </p>\
+                <div class="list">{{orderList}}</div>\
+                <p class="total">\
+                    共{{totalNum}}件商品(含运费￥{{fare}})<span class="text-red">合计￥{{totalPrice}}</span>\
+                </p>\
+            </div>'
+            var tem_detailList = '<div class="des">\
+                <img src="{{imgurl}}" alt="">\
+                <div class="info">\
+                    <p>{{name}}</p>\
+                    <p class="info-txt">\
+                        <span>￥{{price}}</span>\
+                        <span>x{{num}}</span>\
+                        <span class="text-red">￥{{total}}</span>\
+                    </p>\
+                </div>\
+            </div>'
+            </script>
+        </div>'
+    <script src="../../asset/js/person.min.js"></script>
+
+    </body>
+</html>

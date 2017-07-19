@@ -58,7 +58,6 @@ function initDetail() {
           payRule: data.payRule
         })
         $('#financeDetail .detailContent').html(html_detail)
-
     }
   // })
 }
