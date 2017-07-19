@@ -1,0 +1,89 @@
+#secure {
+  .secure-head {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .secure-type {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    select {
+      display: -webkit-box;
+      -webkit-box-flex: 1;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      padding: 10px;
+      margin-left: 10px;
+      border: 1px solid #e5e5e5;
+      outline: 0;
+      background: url(../../asset/images/arrow_bg.png) center right no-repeat;
+      background-size: 45px 39px;
+    }
+  }
+  .secure-des {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    color: #808080;
+    font-size: 14px;
+  }
+  .list-info {
+    -webkit-box-flex: 1;
+    .info-txt {
+      overflow: hidden;
+      margin-bottom: 10px;
+      span {
+        color: #333;
+      }
+    }
+    .info-tips {
+      float: right;
+    }
+  }
+  .arrow {
+    display: block;
+    width: 11px;
+    height: 20px;
+    margin-left: 30px;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: 100%;
+  }
+}
+#secureDetail {
+  .secure-des {
+    padding: 15px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #808080;
+  }
+  .hd {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .des {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .subdes {
+    margin-left: 15px;
+    span{
+      display: block;
+      margin-left: 15px;
+    }
+  }
+  .text-red {
+    display: block;
+    margin: 10px 0 20px;
+    text-align: center;
+  }
+  .font-bold {
+    color: #333;
+  }
+}

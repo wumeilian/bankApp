@@ -1328,6 +1328,9 @@ button.swiper-pagination-bullet {
 .text-red {
   color: #e4020d; }
 
+.font-bold {
+  font-weight: bold; }
+
 .search {
   display: -webkit-box;
   -webkit-box-align: center;
@@ -2246,3 +2249,83 @@ button.swiper-pagination-bullet {
       border: 1px solid #d4d1d1; }
   #regist .button {
     margin-top: 40px; }
+
+#secure .secure-head {
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+#secure .secure-type {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding: 10px 0;
+  box-sizing: border-box; }
+  #secure .secure-type select {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #e5e5e5;
+    outline: 0;
+    background: url(../../asset/images/arrow_bg.png) center right no-repeat;
+    background-size: 45px 39px; }
+
+#secure .secure-des {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff;
+  color: #808080;
+  font-size: 14px; }
+
+#secure .list-info {
+  -webkit-box-flex: 1; }
+  #secure .list-info .info-txt {
+    overflow: hidden;
+    margin-bottom: 10px; }
+    #secure .list-info .info-txt span {
+      color: #333; }
+  #secure .list-info .info-tips {
+    float: right; }
+
+#secure .arrow {
+  display: block;
+  width: 11px;
+  height: 20px;
+  margin-left: 30px;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100%; }
+
+#secureDetail .secure-des {
+  padding: 15px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #808080; }
+
+#secureDetail .hd {
+  margin-bottom: 10px;
+  text-align: center; }
+
+#secureDetail .des {
+  margin-bottom: 10px;
+  line-height: 1.6; }
+
+#secureDetail .subdes {
+  margin-left: 15px; }
+  #secureDetail .subdes span {
+    display: block;
+    margin-left: 15px; }
+
+#secureDetail .text-red {
+  display: block;
+  margin: 10px 0 20px;
+  text-align: center; }
+
+#secureDetail .font-bold {
+  color: #333; }

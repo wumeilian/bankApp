@@ -85,7 +85,7 @@ function initFinance() {
   // }, function(data) {
     if(data.Code == 0 && data.Items.length > 0) {
         var html = data.Items.map(function(items) {
-            return Mustache.render(template.fundTemplate,items)
+            return Mustache.render(tem_fund,items)
         })
         $('#financeHome .home-fund').html(html)
     }

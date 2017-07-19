@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <title>陵城农商银行</title>
+        <meta name="description" content="">
+        <link href="../../asset/css/main.min.css" rel="stylesheet" type="text/css">
+        <script src="../../asset/js/plugin/jquery.min.js"></script>
+        <script src="../../asset/js/plugin/mustache.min.js"></script>
+    </head>
+    <body>
+        <header class="head head-blue">
+            <a class="back" href="javascript:history.back(-1)"></a>
+            <div class="hd ">
+                <p class="txt">产品查询</p>
+            </div>
+        </header>
+        <div id="secure">
+            <div class="mod secure-head">
+              <div class="secure-type">
+                  <label>产品类型:</label>
+                  <select id="secure-select" name="type">
+                      <option value="option1">意外险</option>
+                      <option value="option2">工伤险</option>
+                      <option value="option3">意外险</option>
+                      <option value="option4">工伤险</option>
+                  </select>
+              </div>
+              <p>保险公司:陵城农商保险</p>
+            </div>
+            <div class="secure-list">
+              <script>
+                var tem_list = '<a href="detail.html" id={{id}} class="secure-des">\
+                    <div class="list-info">\
+                      <p class="info-txt">产品名称：<span class="font-bold">{{name}}</span></p>\
+                      <p class="info-txt">产品类型：<span>{{type}}</span>\
+                          <span class="info-tips">保费：<i class="text-red">￥{{price}}</i></span>\
+                      </p>\
+                    </div>\
+                    <span class="arrow"></span>\
+                  </a>'
+              </script>
+            </div>
+
+            <!-- <a href="" class="secure-list">
+              <div class="list-info">
+                <p class="info-txt">产品名称：<span class="font-bold">旅行无忧A-1(7天)</span></p>
+                <p class="info-txt">产品类型：<span>意外险</span>
+                    <span class="info-tips">保费：<i class="text-red">￥90.00</i></span>
+                </p>
+              </div>
+              <span class="arrow"></span>
+            </a> -->
+        </div>
+    <script src="../../asset/js/secure.min.js"></script>
+
+    </body>
+</html>

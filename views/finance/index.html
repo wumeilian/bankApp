@@ -12,10 +12,7 @@
         <link href="../../asset/css/main.min.css" rel="stylesheet" type="text/css">
         <script src="../../asset/js/plugin/jquery.min.js"></script>
         <script src="../../asset/js/plugin/mustache.min.js"></script>
-        <script src="../../asset/js/template.min.js"></script>
-        <script type="text/javascript">
-            var template = template
-        </script>
+
     </head>
     <body>
         <header class="head head-blue">
@@ -33,6 +30,24 @@
               <input type="text" name="" value="" placeholder="请输入完整产品代码">
             </div>
             <div class="home-fund">
+              <script>
+              var tem_fund = '<div class="mod mod-fund">\
+                 <div class="hd">\
+                     {{fundName}} | {{type}}\
+                     <span>{{descript}}</span>\
+                 </div>\
+                 <a class="bd" href="detail.html?id={{id}}">\
+                     <div class="rate">\
+                         <p class="sub">{{rateDes}}</p>\
+                         <p class="num">{{rate}}</p>\
+                     </div>\
+                     <div class="income">\
+                         <p class="sub">{{incomeDes}}</p>\
+                         <p class="num">{{income}}</p>\
+                     </div>\
+                 </a>\
+             </div>'
+              </script>
             </div>
         </div>
     <script src="../../asset/js/finance.min.js"></script>
