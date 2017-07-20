@@ -20,7 +20,7 @@ var template = {
  //首页广告模板、单张图片模板
  adTemplate: '<img src="{{imgurl}}" alt="">',
  goodsTemplate: '<div class="des">\
-    <a href="/detail/{{id}}.html">\
+    <a href="credit/detail.html">\
        <p class="hd">{{name}}</p>\
        <p class="txt">{{des}}</p>\
        <img src="{{imgurl}}" alt="">\
