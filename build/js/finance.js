@@ -6,9 +6,9 @@ $(document).ready(function(){
     //理财详情页
     if($("#financeDetail").length>0) {
       initDetail()
-      $('#financeDetail').on('click', '.arrow-down', function(){
-        $(this).toggleClass('up')
-        $(this).parents('.info').find('.info-txt').toggleClass('hidden')
+      $('#financeDetail').on('click', '.title', function(){
+        $(this).find('.arrow-down').toggleClass('up')
+        $(this).next('.info-txt').toggleClass('hidden')
       })
     }
 })
@@ -29,34 +29,39 @@ function initDetail() {
         //折线图
         line(data.date, data.num)
         //产品详情
-        var html_detail =  Mustache.render(temp_detail,{
-          name: data.name,
-          code: data.code,
-          manage: data.manage,
-          theme: data.theme,
-          proName: data.proName,
-          proCode: data.proCode,
-          proCurrency: data.proCurrency,
-          proIncome: data.proIncome,
-          proValue: data.proValue,
-          proTime: data.proTime,
-          proObj: data.proObj,
-          proStatus: data.proStatus,
-          proType: data.proType,
-          proIncomeType: data.proIncomeType,
-          proLevel: data.proLevel,
-          proDate: data.proDate,
-          proBegin: data.proBegin,
-          proEnd: data.proEnd,
-          proChannel: data.proChannel,
-          proExchange: data.proExchange,
-          proGuadan: data.proGuadan,
-          payOrigin: data.payOrigin,
-          payAdd: data.payAdd,
-          payBack: data.payBack,
-          payLow: data.payLow,
-          payRule: data.payRule
+        var html_detail = data.detail.map(function(items,index) {
+            return Mustache.render(temp_detail,{
+              index: index,
+              items: items})
         })
+        // var html_detail =  Mustache.render(temp_detail,{
+        //   name: data.name,
+        //   code: data.code,
+        //   manage: data.manage,
+        //   theme: data.theme,
+        //   proName: data.proName,
+        //   proCode: data.proCode,
+        //   proCurrency: data.proCurrency,
+        //   proIncome: data.proIncome,
+        //   proValue: data.proValue,
+        //   proTime: data.proTime,
+        //   proObj: data.proObj,
+        //   proStatus: data.proStatus,
+        //   proType: data.proType,
+        //   proIncomeType: data.proIncomeType,
+        //   proLevel: data.proLevel,
+        //   proDate: data.proDate,
+        //   proBegin: data.proBegin,
+        //   proEnd: data.proEnd,
+        //   proChannel: data.proChannel,
+        //   proExchange: data.proExchange,
+        //   proGuadan: data.proGuadan,
+        //   payOrigin: data.payOrigin,
+        //   payAdd: data.payAdd,
+        //   payBack: data.payBack,
+        //   payLow: data.payLow,
+        //   payRule: data.payRule
+        // })
         $('#financeDetail .detailContent').html(html_detail)
     }
   // })
@@ -135,32 +140,35 @@ var dataDetail = {
         'title': '农商宝',
         'date': ['06-11', '06-11', '06-11', '06-11', '06-11', '06-11', '06-11'],
         'num': [3,5,2,5,2,4,6],
-        'name': '博时现金宝货币C类',
-        'code': '002855',
-        'manage': '博时基金管理有限公司',
-        'theme': '博时基金管理有限公司',
-        'proName': '掌中宝-001期',
-        'proCode': 'LEB001',
-        'proCurrency': '人民币',
-        'proIncome': '4%',
-        'proValue': 1.0000,
-        'proTime': '36天',
-        'proObj': '适用于风险等级为稳健型（含）以上的客户',
-        'proStatus': '在售产品',
-        'proType': '现金管理类产品',
-        'proIncomeType': '保本浮动收益',
-        'proLevel': '低风险',
-        'proDate': '2017/01/27-2017/01/31',
-        'proBegin': '2017/02/01',
-        'proEnd': '2017/03/08',
-        'proChannel': '柜台，网上银行，手机银行',
-        'proExchange': '08:00:00-18:00:00',
-        'proGuadan': '18:00:00-07:59:59',
-        'payOrigin': '5万',
-        'payAdd': '1000.00',
-        'payBack': '1000.00',
-        'payLow': '5000.00',
-        'payRule': 'T日认购，资金冻结，投资收益起算日统一扣划；申购实施扣款到本金及收益到账规则'
+        'detai': [{
+          'name': '博时现金宝货币C类',
+          'code': '002855',
+          'manage': '博时基金管理有限公司',
+          'theme': '博时基金管理有限公司',
+          'proName': '掌中宝-001期',
+          'proCode': 'LEB001',
+          'proCurrency': '人民币',
+          'proIncome': '4%',
+          'proValue': 1.0000,
+          'proTime': '36天',
+          'proObj': '适用于风险等级为稳健型（含）以上的客户',
+          'proStatus': '在售产品',
+          'proType': '现金管理类产品',
+          'proIncomeType': '保本浮动收益',
+          'proLevel': '低风险',
+          'proDate': '2017/01/27-2017/01/31',
+          'proBegin': '2017/02/01',
+          'proEnd': '2017/03/08',
+          'proChannel': '柜台，网上银行，手机银行',
+          'proExchange': '08:00:00-18:00:00',
+          'proGuadan': '18:00:00-07:59:59',
+          'payOrigin': '5万',
+          'payAdd': '1000.00',
+          'payBack': '1000.00',
+          'payLow': '5000.00',
+          'payRule': 'T日认购，资金冻结，投资收益起算日统一扣划；申购实施扣款到本金及收益到账规则'
+        }]
+
     }
 
 }

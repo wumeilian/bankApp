@@ -20,7 +20,7 @@
                 <p class="txt">附近银行</p>
             </div>
         </header>
-        <div id="nearBank">
+        <div id="nearBank" class="pt5">
           <div class="detail-search">
               <div class="search">
                   <input type="text" name="" value="" placeholder="请输入关键词">
@@ -34,23 +34,17 @@
               <li class="des">ATM</li>
               <li class="des">农金通</li>
           </ul>
-          <div class="detial-module">
-            <div class="mod detail-des">
-              <p class="hd">陵城农商保险<span>8m</span></p>
-              <p class="txt"><i></i>山东省某某某</p>
-            </div>
-            <div class="mod detail-des">
-              <p class="hd">陵城农商保险<span>8m</span></p>
-              <p class="txt"><i></i>山东省某某某</p>
-            </div>
-            <div class="mod detail-des">
-              <p class="hd">陵城农商保险<span>8m</span></p>
-              <p class="txt"><i></i>山东省某某某</p>
-            </div>
+          <div class="detial-module" id="nearBankZH">
+            <script>
+              var tem_bank = '<div class="mod detail-des" id={{id}}>\
+                <p class="hd">{{name}}<span>{{meter}}</span></p>\
+                <p class="txt"><i></i>{{address}}</p>\
+              </div>'
+            </script>
           </div>
-          <div class="detial-module hidden">something2</div>
-          <div class="detial-module hidden">something3</div>
-          <div class="detial-module hidden">something4</div>
+          <div class="detial-module hidden" id="nearBankSocial"></div>
+          <div class="detial-module hidden" id="nearBankATM"></div>
+          <div class="detial-module hidden" id="nearBankNJT"></div>
         </div>
         <footer class="foot">
           <a class="item" href="../index.html">

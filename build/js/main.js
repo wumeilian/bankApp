@@ -36,6 +36,24 @@ var data = {
     },
   ]
 }
+//banner数据
+var dataSlide = {
+  Code: 0,
+  Items: [
+    {
+        'id': 0,
+        'imgurl': '../asset/images/banner.png',
+    },
+    {
+        'id': 1,
+        'imgurl': '../asset/images/banner.png',
+    },
+    {
+        'id': 2,
+        'imgurl': '../asset/images/banner.png',
+    }
+  ]
+}
 //广告数据
 var dataAd = {
   Code: 0,
@@ -85,11 +103,36 @@ var dataGoods = {
 
 
 $(document).ready(function(){
+    initBanner() //banner轮播图
     initFund()  //首页基金
     initAd() //首页广告
     initRec() //今日推荐
 
 })
+
+function initBanner() {
+  if(dataSlide.Code == 0 && dataSlide.Items) {
+    var slide_html = dataSlide.Items.map(function(items) {
+          return Mustache.render(tem_slide,{
+            id: items.id,
+            imgurl: items.imgurl})
+      })
+
+      $('#index .swiper-wrapper').html(slide_html)
+      initSlide() //轮播图
+    }
+}
+/*轮播图*/
+function initSlide() {
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    onClick: function(swiper){
+          alert('点击事件');
+        }
+  })
+}
 //首页广告位
 function initAd() {
   if(dataAd.Code == 0 && dataAd.Items.length > 0) {
@@ -116,6 +159,7 @@ function initFund() {
 //今日推荐
 function initRec() {
   if(dataGoods.Code == 0 && dataGoods.Items.length > 0) {
+    $('#index .mod-rec').removeClass('hidden')
       var html_l = Mustache.render(template.adTemplate, {imgurl: dataGoods.Items[0].imgurl})
       $('#index .rec-content').html(html_l)
       var html = dataGoods.Items.map(function(items,index) {

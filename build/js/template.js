@@ -19,13 +19,11 @@ var template = {
  </div>',
  //首页广告模板、单张图片模板
  adTemplate: '<img src="{{imgurl}}" alt="">',
- goodsTemplate: '<div class="des">\
-    <a href="credit/detail.html">\
-       <p class="hd">{{name}}</p>\
-       <p class="txt">{{des}}</p>\
+ goodsTemplate: '<a class="des" href="credit/detail.html">\
+       <p class="hd ellipsis">{{name}}</p>\
+       <p class="txt ellipsis">{{des}}</p>\
        <img src="{{imgurl}}" alt="">\
-     </a>\
- </div>',
+     </a>',
 //列表模板
 listTemplate: '<a class="item" href="detail.html?id={{id}}">\
     <img src="{{imgurl}}" alt="">\

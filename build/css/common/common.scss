@@ -2,8 +2,19 @@
     margin-bottom: 10px;
     background-color: #fff;
 }
-.contain { 
+.contain {
     padding-bottom: 75px;
+}
+.pt8 {
+  padding-top: 82px !important;
+}
+.pt5 {
+  padding-top: 52px !important;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .text-red {
   color: #e4020d;

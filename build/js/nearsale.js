@@ -55,5 +55,21 @@ var data = {
         'position': '长沙市岳麓区麓谷新长海中心B2306',
         'imgurl': '../../asset/images/bank_1.png'
     },
+    {
+        'id': 3,
+        'title': '逍遥小店',
+        'discount': '5折',
+        'distant': '5m',
+        'position': '长沙市岳麓区麓谷新长海中心B2306',
+        'imgurl': '../../asset/images/bank_1.png'
+    },
+    {
+        'id': 3,
+        'title': '逍遥小店',
+        'discount': '5折',
+        'distant': '5m',
+        'position': '长沙市岳麓区麓谷新长海中心B2306',
+        'imgurl': '../../asset/images/bank_1.png'
+    },
   ]
 }

@@ -24,9 +24,17 @@
                 <p class="txt">陵城农商银行</p>
             </div>
         </header>
-        <div id="index" class="contain">
+        <div id="index" class="contain pt8">
             <div class="mod-banner">
-                <img src="../asset/images/banner.png" alt="">
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <script>
+                        var tem_slide = '<div class="swiper-slide" id={{id}}><img src="{{imgurl}}"></div>'
+                      </script>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+                <!-- <img src="../asset/images/banner.png" alt=""> -->
             </div>
             <div class="mod mod-nav">
                 <a class="item" href="credit/index.html">
@@ -60,7 +68,7 @@
             <div class="home-fund">
             </div>
 
-            <div class="mod mod-rec">
+            <div class="mod mod-rec hidden">
                 <a class="fl" href="credit/detail.html">
                     <div class="hd">
                         <p class="rec-title">
@@ -98,6 +106,7 @@
               <p>个人中心</p>
           </a>
         </footer>
+    <script src="../asset/js/plugin/swiper-3.4.2.jquery.min.js"></script>
     <script src="../asset/js/main.min.js"></script>
 
     </body>
