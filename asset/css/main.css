@@ -1452,6 +1452,9 @@ button.swiper-pagination-bullet {
       -o-transform: rotate(-180deg);
       /* Opera */ }
 
+input[type="date"] {
+  background: #fff; }
+
 .mod-banner .swiper-container {
   height: 150px; }
 

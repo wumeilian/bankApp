@@ -29,126 +29,34 @@
                 <p class="hd">年化收益利率(%)</p>
             </div>
             <div class="detailContent">
-            <script>
-            var temp_detail = '<div class="mod">\
-              <p class="des">\
-                <span class="hd">基金名称</span>\
-                <span class="txt">{{name}}</span>\
-              </p>\
-              <p class="des">\
-                <span class="hd">基金代码</span>\
-                <span class="txt">{{code}}</span>\
-              </p>\
-              <p class="des">\
-                <span class="hd">基金管理人</span>\
-                <span class="txt">{{manage}}</span>\
-              </p>\
-              <p class="des">\
-                <span class="hd">基金销售服务主题</span>\
-                <span class="txt">{{theme}}</span>\
-              </p>\
-            </div>\
-            <div class="mod detail-info">\
-               <div class="info pro">\
-                 <p class="title">产品属性<span class="arrow-down"></span></p>\
-                 <div class="info-txt hidden">\
-                   <p class="sub-des">\
-                     <span class="hd">产品名称</span>\
-                     <span class="txt">{{proName}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品代码</span>\
-                     <span class="txt">{{proCode}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品币种</span>\
-                     <span class="txt">{{proCurrency}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">预期年化收益</span>\
-                     <span class="txt">{{proIncome}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">份额面值</span>\
-                     <span class="txt">{{proValue}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品期限</span>\
-                     <span class="txt">{{proTime}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">使用对象</span>\
-                     <span class="txt">{{proObj}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">销售状态</span>\
-                     <span class="txt">{{proStatus}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品类型</span>\
-                     <span class="txt">{{proType}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">收益类型</span>\
-                     <span class="txt">{{proIncomeType}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">风险等级</span>\
-                     <span class="txt">{{proLevel}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品销售期</span>\
-                     <span class="txt">{{proDate}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品成立日</span>\
-                     <span class="txt">{{proBegin}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">产品到期日</span>\
-                     <span class="txt">{{proEnd}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">交易渠道</span>\
-                     <span class="txt">{{proChannel}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">交易时间</span>\
-                     <span class="txt">{{proExchange}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">挂单时间</span>\
-                     <span class="txt">{{proGuadan}}</span>\
-                   </p>\
-                 </div>\
-               </div>\
-               <div class="info pay">\
-                 <p class="title">购买属性<span class="arrow-down"></span></p>\
-                 <div class="info-txt hidden">\
-                   <p class="sub-des">\
-                     <span class="hd">首次购买起点金额（起购金额）</span>\
-                     <span class="txt">{{payOrigin}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">追加购买起点金额</span>\
-                     <span class="txt">{{payAdd}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">赎回起点份额</span>\
-                     <span class="txt">{{payBack}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">最低持有份额</span>\
-                     <span class="txt">{{payLow}}</span>\
-                   </p>\
-                   <p class="sub-des">\
-                     <span class="hd">购买扣款规则</span>\
-                     <span class="txt">{{payRule}}</span>\
-                   </p>\
-                </div>\
-               </div>\
-            </div>'
-          </script>
+              <div class="mod detail-deshead">
+                  <script>
+                  var temp_des = '<p class="des">\
+                      <span class="hd">{{key}}</span>\
+                      <span class="txt">{{value}}</span>\
+                    </p>'
+                  </script>
+            </div>
+            
+            <div class="mod detail-info">
+                <div class="info pro">
+                  <p class="title">产品属性<span class="arrow-down"></span></p>
+                  <div class="info-txt hidden">
+                    <script>
+                      var tem_mod = '<p class="sub-des">\
+                          <span class="hd">{{key}}</span>\
+                          <span class="txt">{{value}}</span>\
+                      </p>'
+                    </script>
+                  </div>
+               </div>
+               <div class="info pay">
+                  <p class="title">购买属性<span class="arrow-down"></span></p>
+                  <div class="info-txt hidden">
+                  </div>
+               </div>
+            </div>
+         
           </div>
           <a class="button buynow" href="#">立即抢购</a>
         </div>
