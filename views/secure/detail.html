@@ -22,21 +22,23 @@
         </header>
         <div id="secureDetail" class="pt5">
           <div class="secure-des">
-              <p class="hd">该部分信息与您的保险利益息息相关，请仔细阅读</p>
-              <p class="des">保险公司名称：<span class="font-bold">陵城农商保险</span></p>
-              <p class="des">产品名称：<span class="font-bold">旅行无忧A-1(7天)</span></p>
-              <div class="des">产品介绍：
-                <p class="subdes">保险期限：30天</p>
-                <p class="subdes">保费（每份）：280元</p>
-                <p class="subdes">保险责任（每份）：
-                    <span>治疗后运送回居住所：5万</span>
-                    <span>治疗后运送回居住所：5万</span>
-                    <span>治疗后运送回居住所：5万</span>
-                </p>
-                <p class="subdes">适用年龄：28-75周岁</p>
-                <p class="subdes">适用人群：短期境外出行的旅游人士，出国务工及诊疗或就医人员不承保</p>
-              </div>
-              <a class="text-red" href="#">请点击此处查看产品条款明细</a>
+          <script>
+            var tem_detail = '<p class="hd">该部分信息与您的保险利益息息相关，请仔细阅读</p>\
+              <p class="des">保险公司名称：<span class="font-bold">{{company}}</span></p>\
+              <p class="des">产品名称：<span class="font-bold">{{product}}</span></p>\
+              <div class="des">产品介绍：\
+                <p class="subdes">保险期限：{{deadline}}</p>\
+                <p class="subdes">保费（每份）：{{price}}</p>\
+                <p class="subdes">保险责任（每份）：\
+                    <span>治疗后运送回居住所：{{duty1}}</span>\
+                    <span>治疗后运送回居住所：{{duty2}}</span>\
+                    <span>治疗后运送回居住所：{{duty3}}</span>\
+                </p>\
+                <p class="subdes">适用年龄：{{age}}</p>\
+                <p class="subdes">适用人群：{{person}}</p>\
+              </div>\
+              <a class="text-red" href="#">请点击此处查看产品条款明细</a>'
+          </script>              
           </div>
           <a class="button button-radius" href="">投保</a>
         </div>
