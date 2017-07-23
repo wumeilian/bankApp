@@ -1,9 +1,6 @@
 $(function() {
   if($('#order').length > 0) {
       initOrder()
-    //   console.log($('.list').text())
-    //   var html = $('.list').text()
-    // $('.list').html(html)
   }
 })
 
@@ -16,8 +13,14 @@ function initOrder() {
   // }, function(data) {
     if(data_order.Code == 0 && data_order.Items) {
       var data = data_order.Items
-         var order_html = data.map(function(items) {
-           var list_html = items.orderlist.map(function(subitems) {
+     
+        var order_html = data.map(function(items) {
+         
+          var html = '<div class="mod mod-order">\
+                <p class="hd">兑换码:'+items.orderid+'\
+                  <span class="hd-status">'+items.status+'</span>\
+                </p>'
+          var list_html = items.orderlist.map(function(subitems) {
              return Mustache.render(tem_detailList,{
                     imgurl: subitems.imgurl,
                     name: subitems.name,
@@ -26,22 +29,15 @@ function initOrder() {
                     total: subitems.total
              })
            })
-          console.log(list_html,777)
-
-          return Mustache.render(tem_order,{
-              orderid: items.orderid,
-              status: items.status,
-              orderList: list_html,
-              totalNum: items.totalNum,
-              fare: items.fare,
-              totalPrice: items.totalPrice
-          })
-      })
-      console.log(order_html,888)
-      $('#order').html(order_html)
-      var html = $('.list').text()
-      $('.list').html(html)
+          html += (list_html.join(''))
+          html += '<p class="total">\
+                    共'+items.totalNum+'件商品(含运费￥'+items.fare+')<span class="text-red">合计￥'+items.totalPrice+'</span>\
+                </p>\
+            </div>'
+          $('#order').append(html)
+        })  
     }
+    //})
 }
 //订单数据
 var data_order = {
