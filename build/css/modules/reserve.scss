@@ -3,10 +3,11 @@
 		padding: 10px;
 	}
 	.des {
-		display: -webkit-box;
+			position: relative;
+			display: -webkit-box;
 	    -webkit-box-align: center;
 	    padding: 5px 0;
-	    margin-bottom: 15px;
+	    margin-bottom: 20px;
 	    border: 1px solid #bfbdbd;
 	    border-radius: 2px;
 	    font-size: 15px;
@@ -22,6 +23,25 @@
 		    padding: 5px 10px;
 		    font-size: 15px;
 	    }
+			select {
+				display: -webkit-box;
+				-webkit-box-flex: 1;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				padding: 10px;
+				margin-left: 10px;
+				border: 0;
+				outline: 0;
+				background: url(../../asset/images/pulldown.png) center right no-repeat;
+				background-size: 42px 40px;
+			}
+			.tips {
+				position: absolute;
+				top: 47px;
+				left: 0;
+				font-size: 12px;
+			}
 	}
 
 	.btn-undo {
@@ -32,7 +52,7 @@
 	.submit-content {
 		padding: 15px;
 	    margin-bottom: 50px;
-	    background-color: #fff;		
+	    background-color: #fff;
 	}
 	.des {
 		display: -webkit-box;

@@ -24,18 +24,25 @@
             <div class="reserve-content">
                 <div class="des">
                     <label>银行</label>
-                    <input type="text">
+                    <select id="secure-select" name="type">
+                        <option value="option1">中国银行</option>
+                        <option value="option2">中国银行</option>
+                        <option value="option3">中国银行</option>
+                        <option value="option4">中国银行</option>
+                    </select>
                 </div>
                 <div class="des">
                     <label>金额</label>
-                    <input type="text">
+                    <input type="text" class="reserve-num">
+                    <p class="tips text-red"></p>
                 </div>
                 <div class="des">
                     <label>时间</label>
-                    <input type="date">
+                    <input type="date" class="reserve-date" defaultValue="2017-09-11">
+                    <p class="tips text-red"></p>
                 </div>
             </div>
-            <a class="button button-radius button-gray" href="submit.html">确定预约</a>
+            <a class="button button-radius button-gray" id="reserveBtn" href="submit.html">确定预约</a>
         </div>
         <footer class="foot">
           <a class="item" href="../index.html">

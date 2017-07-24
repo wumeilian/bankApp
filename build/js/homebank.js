@@ -7,9 +7,9 @@ $(function() {
 
 //下拉箭头切换
 function arrowShow() {
-  $('.detail-list').on('click', '.arrow-down', function() {
-    $(this).toggleClass('up')
-    $(this).parents('.des').find('.info').toggleClass('hidden')
+  $('.detail-list').on('click', '.hd', function() {
+    $(this).find('.arrow-down').toggleClass('up')
+    $(this).next('.info').toggleClass('hidden')
   })
 }
 //tab切换

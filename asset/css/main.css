@@ -2077,10 +2077,11 @@ input[type="date"] {
   padding: 10px; }
 
 #reserve .des {
+  position: relative;
   display: -webkit-box;
   -webkit-box-align: center;
   padding: 5px 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #bfbdbd;
   border-radius: 2px;
   font-size: 15px; }
@@ -2094,6 +2095,23 @@ input[type="date"] {
     width: 100%;
     padding: 5px 10px;
     font-size: 15px; }
+  #reserve .des select {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 10px;
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+    background: url(../../asset/images/pulldown.png) center right no-repeat;
+    background-size: 42px 40px; }
+  #reserve .des .tips {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    font-size: 12px; }
 
 #reserve .btn-undo {
   background-color: #d8d5d5; }
