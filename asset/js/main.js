@@ -70,8 +70,8 @@ var dataGoods = {
   Items: [
     {
         'id': 0,
-        'name': '商品名称',
-        'des': '买买买',
+        'name': '今日推荐',
+        'des': '午后小吃，吃出健康',
         'imgurl': '../asset/images/img1.png',
     },
     {
@@ -160,8 +160,8 @@ function initFund() {
 function initRec() {
   if(dataGoods.Code == 0 && dataGoods.Items.length > 0) {
     $('#index .mod-rec').removeClass('hidden')
-      var html_l = Mustache.render(template.adTemplate, {imgurl: dataGoods.Items[0].imgurl})
-      $('#index .rec-content').html(html_l)
+      var html_l = Mustache.render(tem_rec, dataGoods.Items[0])
+      $('#index .mod-rec').prepend(html_l)
       var html = dataGoods.Items.map(function(items,index) {
         if(index > 0) {
           return Mustache.render(template.goodsTemplate,items)

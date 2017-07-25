@@ -69,17 +69,20 @@
             </div>
 
             <div class="mod mod-rec hidden">
-                <a class="fl" href="credit/detail.html">
-                    <div class="hd">
-                        <p class="rec-title">
-                            <img src="../asset/images/rec.png" alt="">
-                            <span>今日推荐</span>
-                        </p>
-                        <p class="rec-txt">午后小吃，吃出健康</p>
-                    </div>
-                    <div class="rec-content">
-                    </div>
-                </a>
+                <script>
+                  var tem_rec = '<a class="fl" href="credit/detail.html?id={{id}}">\
+                      <div class="hd">\
+                          <p class="rec-title">\
+                              <img src="../asset/images/rec.png" alt="">\
+                              <span>{{name}}</span>\
+                          </p>\
+                          <p class="rec-txt">{{des}}</p>\
+                      </div>\
+                      <div class="rec-content">\
+                        <img src="{{imgurl}}" alt="">\
+                      </div>\
+                  </a>'
+                </script>
                 <div class="fr">
                 </div>
             </div>
