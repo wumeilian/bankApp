@@ -61,7 +61,7 @@ function line(arrayX, arrayY) {
   }, {
     fullWidth: true,
     chartPadding: {
-      right: 30
+      right: 40
     }
   })
 }
