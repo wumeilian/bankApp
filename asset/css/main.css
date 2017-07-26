@@ -2263,7 +2263,7 @@ input[type="date"] {
   margin: 30px 15px; }
 
 #login .login-info {
-  overflow: hidden;
+  position: relative;
   margin: 15px 0;
   font-size: 14px;
   border-bottom: 1px solid #e5e5e5; }
@@ -2275,6 +2275,11 @@ input[type="date"] {
     background-size: 100%; }
   #login .login-info input {
     padding: 10px; }
+  #login .login-info .tips {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    font-size: 12px; }
 
 #login .regist {
   padding: 15px;
@@ -2287,6 +2292,7 @@ input[type="date"] {
   padding: 20px;
   margin-top: 20px; }
   #regist .des {
+    position: relative;
     display: -webkit-box;
     -webkit-box-align: center;
     margin-bottom: 15px;
@@ -2299,6 +2305,11 @@ input[type="date"] {
       -webkit-box-flex: 1;
       padding: 10px;
       border: 1px solid #d4d1d1; }
+    #regist .des .tips {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      font-size: 12px; }
   #regist .button {
     margin-top: 40px; }
 

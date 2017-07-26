@@ -145,7 +145,7 @@
       margin: 30px 15px;
   }
   .login-info {
-    overflow: hidden;
+    position: relative;
     margin: 15px 0;
     font-size: 14px;
     border-bottom: 1px solid #e5e5e5;
@@ -158,6 +158,12 @@
     }
     input{
       padding: 10px;
+    }
+    .tips {
+      position: absolute;
+      top: 37px;
+      left: 0;
+      font-size: 12px;
     }
   }
   .regist {
@@ -172,6 +178,7 @@
   padding: 20px;
   margin-top: 20px;
   .des {
+    position: relative;
     display: -webkit-box;
     -webkit-box-align: center;
     margin-bottom: 15px;
@@ -185,6 +192,12 @@
       -webkit-box-flex: 1;
       padding: 10px;
       border: 1px solid #d4d1d1;
+    }
+    .tips {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      font-size: 12px;
     }
   }
   .button {

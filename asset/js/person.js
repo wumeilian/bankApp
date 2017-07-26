@@ -1,8 +1,111 @@
 $(function() {
+  //订单中心
   if($('#order').length > 0) {
       initOrder()
   }
+  //登陆
+  if($('#login').length > 0) {
+    login()
+    resetInput()
+  }
+  //注册
+  if($('#regist').length > 0) {
+    regist()
+    resetRegist()
+  }
 })
+
+//注册
+function regist() {
+  $('#registBtn').bind('click',function() {
+    var verify = true
+    var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/ //身份证
+    var id = $('#registID').val()
+    var name = $('#registName').val()
+    var pwd = $('#registPwd').val()
+    var repwd = $('#registRePwd').val()
+    if(id == '') {
+      $('#registID').next('.tips').html('身份证不能为空')
+      verify = false
+    }
+    if(!(reg.test(id))) {
+      $('#registID').next('.tips').html('请输入正确的身份证')
+      verify = false
+    }
+    if(name == '') {
+      $('#registName').next('.tips').html('姓名不能为空')
+      verify = false
+    }
+    if(pwd == '') {
+      $('#registPwd').next('.tips').html('密码不能为空')
+      verify = false
+    }
+    if(repwd == '') {
+      $('#registRePwd').next('.tips').html('密码不能为空')
+      verify = false
+    }
+    if(repwd != pwd) {
+      $('#registRePwd').next('.tips').html('密码不一致')
+      verify = false
+    }
+
+    if(verify) {
+      alert('验证成功')
+    }
+  })
+}
+
+//重置输入框
+function resetRegist() {
+  $('#registID').focus(function() {
+      $('#registID').next('.tips').html('')
+  })
+  $('#registName').focus(function() {
+      $('#registName').next('.tips').html('')
+  })
+  $('#registPwd').focus(function() {
+      $('#registPwd').next('.tips').html('')
+  })
+  $('#registRePwd').focus(function() {
+      $('#registRePwd').next('.tips').html('')
+  })
+}
+
+//登陆
+function login() {
+  $('#loginBtn').bind('click',function() {
+    var reg = /^1[3|4|5|8][0-9]\d{4,8}$/  //手机号
+    var tel = $('#tel').val()
+    var pwd = $('#pwd').val()
+    var verify = true
+    if(tel == '') {
+      $('#tel').next('.tips').html('手机号不能为空')
+      verify = false
+    }
+     if(!(reg.test(tel))) {
+      $('#tel').next('.tips').html('请输入正确的手机号')
+      verify = false
+    } 
+    if(pwd == '') {
+      $('#pwd').next('.tips').html('密码不能为空')
+      verify = false
+    }
+    if(verify) {
+      alert('验证成功')
+    }
+  
+  })
+}
+
+//登陆重置输入框
+function resetInput() {
+  $('#tel').focus(function() {
+      $(this).next('.tips').html('')
+  })
+  $('#pwd').focus(function() {
+      $(this).next('.tips').html('')
+  })
+}
 
 function initOrder() {
   //异步请求接口
