@@ -84,13 +84,13 @@ var dataGoods = {
         'id': 2,
         'name': '商品名称',
         'des': '买买买',
-        'imgurl': '../asset/images/img2.png',
+        'imgurl': '../asset/images/img1.png',
     },
     {
         'id': 3,
         'name': '商品名称',
         'des': '买买买',
-        'imgurl': '../asset/images/img2.png',
+        'imgurl': '../asset/images/img1.png',
     },
     {
         'id': 4,
@@ -103,10 +103,14 @@ var dataGoods = {
 
 
 $(document).ready(function(){
+    //初始化今日推荐图片宽高
+    var W = $(window).width()
+    var w = 0.25*(W-30)-21
+
     initBanner() //banner轮播图
     initFund()  //首页基金
     initAd() //首页广告
-    initRec() //今日推荐
+    initRec(w) //今日推荐
 
 })
 
@@ -157,14 +161,20 @@ function initFund() {
   // })
 }
 //今日推荐
-function initRec() {
+function initRec(w) {
   if(dataGoods.Code == 0 && dataGoods.Items.length > 0) {
     $('#index .mod-rec').removeClass('hidden')
       var html_l = Mustache.render(tem_rec, dataGoods.Items[0])
       $('#index .mod-rec').prepend(html_l)
       var html = dataGoods.Items.map(function(items,index) {
         if(index > 0) {
-          return Mustache.render(template.goodsTemplate,items)
+          return Mustache.render(template.goodsTemplate,{
+            name: items.name,
+            des: items.des,
+            imgurl: items.imgurl,
+            width: w+'px',
+            height: w+'px'
+          })
         }
       })
       $('#index .mod-rec .fr').html(html)

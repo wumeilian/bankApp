@@ -22,7 +22,7 @@ var template = {
  goodsTemplate: '<a class="des" href="credit/detail.html">\
        <p class="hd ellipsis">{{name}}</p>\
        <p class="txt ellipsis">{{des}}</p>\
-       <img src="{{imgurl}}" alt="">\
+       <img src="{{imgurl}}" alt="" width="{{width}}" height="{{height}}">\
      </a>',
 //列表模板
 listTemplate: '<a class="item" href="detail.html?id={{id}}">\
