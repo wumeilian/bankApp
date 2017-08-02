@@ -80,6 +80,7 @@ a, button, input {
   text-anchor: start; }
 
 .ct-label.ct-horizontal.ct-end {
+  margin-left: -0.7rem;
   -webkit-box-align: flex-start;
   -webkit-align-items: flex-start;
   -ms-flex-align: flex-start;
@@ -1329,13 +1330,16 @@ button.swiper-pagination-bullet {
   background-color: #fff; }
 
 .contain {
-  padding-bottom: 30px; }
+  padding-bottom: 32px; }
 
 .pt8 {
   padding-top: 82px !important; }
 
 .pt5 {
-  padding-top: 52px !important; }
+  padding-top: 51px !important; }
+
+.pt15 {
+  padding-top: 115px !important; }
 
 .ellipsis {
   text-overflow: ellipsis;
@@ -1861,6 +1865,9 @@ input[type="date"] {
     color: #1ebcfd; }
 
 .detail-search {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
   display: -webkit-box;
   -webkit-box-align: center;
   padding: 5px 15px;
@@ -2015,14 +2022,7 @@ input[type="date"] {
   display: block; }
 
 #pmcDetail .detail-slide {
-  padding: 40px 10px 10px;
   background-color: #fff; }
-
-#pmcDetail .swiper-pagination {
-  position: relative;
-  margin-top: 40px; }
-  #pmcDetail .swiper-pagination span {
-    margin-right: 10px; }
 
 #pmcDetail .pmcdetail-des {
   padding: 10px 30px;
@@ -2049,6 +2049,10 @@ input[type="date"] {
     color: #fff; }
 
 .detail-nav {
+  position: fixed;
+  width: 100%;
+  margin-top: 70px;
+  background-color: #f0f3f5;
   display: -webkit-box;
   -webkit-box-align: center;
   -webkit-box-pack: justify;

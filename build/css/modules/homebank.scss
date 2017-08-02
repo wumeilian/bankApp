@@ -39,6 +39,9 @@
 }
 
 .detail-search {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
   display: -webkit-box;
   -webkit-box-align: center;
   padding: 5px 15px;

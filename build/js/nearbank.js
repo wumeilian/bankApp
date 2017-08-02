@@ -66,11 +66,53 @@ var data = {
       'meter': '8m',
       'address': '山东省某某某'
     },
+    {
+      'id': 2,
+      'name': '陵城农商保险',
+      'meter': '8m',
+      'address': '山东省某某某'
+    },
+    {
+      'id': 2,
+      'name': '陵城农商保险',
+      'meter': '8m',
+      'address': '山东省某某某'
+    },
+    {
+      'id': 2,
+      'name': '陵城农商保险',
+      'meter': '8m',
+      'address': '山东省某某某'
+    },
+    {
+      'id': 2,
+      'name': '陵城农商保险',
+      'meter': '8m',
+      'address': '山东省某某某'
+    },
+    {
+      'id': 2,
+      'name': '陵城农商保险',
+      'meter': '8m',
+      'address': '山东省某某某'
+    },
   ]
 }
 var data_social = {
   Code: 0,
   Items: [
+    {
+        'id': 0,
+        'name': '陵城农商银行',
+        'meter': '10m',
+        'address': '山西省某某某'
+    },
+    {
+        'id': 0,
+        'name': '陵城农商银行',
+        'meter': '10m',
+        'address': '山西省某某某'
+    },
     {
         'id': 0,
         'name': '陵城农商银行',
